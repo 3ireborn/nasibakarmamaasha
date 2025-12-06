@@ -149,7 +149,6 @@
       color: #000;
     }
 
-    /* Program Reseller = oranye full */
     .btn-ghost {
       background: var(--orange);
       color: #000;
@@ -194,6 +193,60 @@
       font-size: 0.9rem;
       text-decoration: none;
       margin-top: 4px;
+    }
+
+    /* Section Mama Asha */
+    .mama-section {
+      display: grid;
+      gap: 12px;
+      align-items: center;
+    }
+
+    @media (min-width: 720px) {
+      .mama-section {
+        grid-template-columns: 0.9fr 1.1fr;
+      }
+    }
+
+    .mama-photo-wrap {
+      display: flex;
+      justify-content: center;
+    }
+
+    .mama-photo {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 3px solid rgba(255,255,255,0.85);
+      box-shadow: 0 8px 18px rgba(0,0,0,0.4);
+    }
+
+    .mama-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .mama-text-main {
+      font-size: 0.95rem;
+      margin-bottom: 6px;
+    }
+
+    .mama-quote {
+      font-style: italic;
+      font-size: 0.9rem;
+      margin-bottom: 8px;
+      opacity: 0.95;
+    }
+
+    .mama-cta {
+      font-size: 0.87rem;
+      opacity: 0.9;
+    }
+
+    .mama-cta strong {
+      font-weight: 700;
     }
 
     footer {
@@ -292,6 +345,30 @@
     </ul>
   </section>
 
+  <!-- KENALAN SAMA MAMA ASHA -->
+  <section class="section mama-section">
+    <div class="mama-photo-wrap">
+      <div class="mama-photo">
+        <!-- pastikan file ini ada di repo dengan nama persis: mama-asha.jpg -->
+        <img src="mama-asha.jpg" alt="Mama Asha">
+      </div>
+    </div>
+    <div>
+      <h2>Kenalan Sama Mama Asha 😁🍃</h2>
+      <p class="mama-text-main">
+        Di balik setiap bungkus Nasi Bakar Mama Asha, ada doa & cinta dari dapur kecil di Taman Walet.
+      </p>
+      <p class="mama-quote">
+        “Nikmati sensasi gurihnya nasi bakar penuh cinta di setiap gigitan!”
+      </p>
+      <p class="mama-cta">
+        Kalau Besti lapar atau mau pesen buat acara, <br>
+        <strong>biar Mama yang masakin kamu ya 💚</strong><br>
+        Chat aja ke WhatsApp: <strong>0859-3268-4440</strong>
+      </p>
+    </div>
+  </section>
+
   <!-- CARA ORDER -->
   <section class="section">
     <h2>Cara Order</h2>
@@ -329,4 +406,4 @@
 </footer>
 
 </body>
-      </html>
+  </html>
