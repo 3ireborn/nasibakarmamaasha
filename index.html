@@ -12,25 +12,19 @@
       --bg: #0b2218;
       --text: #ffffff;
     }
-
     * { box-sizing: border-box; }
-
     body {
       margin: 0;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-family: system-ui, sans-serif;
       background: var(--bg);
       color: var(--text);
-      line-height: 1.5;
     }
-
     img { max-width: 100%; display: block; }
-
     header {
       padding: 14px 16px;
       background: linear-gradient(135deg, #0c402e, #145c42);
       border-bottom: 1px solid rgba(255,255,255,0.07);
     }
-
     .nav {
       max-width: 960px;
       margin: 0 auto;
@@ -39,245 +33,27 @@
       justify-content: space-between;
       gap: 10px;
     }
-
     .logo-wrap {
       display: flex;
       align-items: center;
       gap: 10px;
     }
-
     .logo img {
       width: 42px;
       height: 42px;
-      object-fit: cover;
       border-radius: 999px;
     }
-
-    .brand-text {
-      display: flex;
-      flex-direction: column;
-      line-height: 1.1;
-    }
-
     .brand-text span:first-child {
       font-weight: 700;
       font-size: 1rem;
-      letter-spacing: 0.04em;
     }
-
     .brand-text span:last-child {
       font-size: 0.78rem;
       opacity: 0.9;
     }
-
     .nav-cta {
       display: none;
     }
-
-    .container {
-      max-width: 960px;
-      margin: 0 auto;
-      padding: 20px 16px 90px;
-    }
-
-    .hero {
-      background: radial-gradient(circle at top left, #207857 0, #123528 55%, #081710 100%);
-      border-radius: 18px;
-      padding: 18px 18px 16px;
-      margin: 16px 0 26px;
-    }
-
-    .hero-tag {
-      display: inline-block;
-      background: rgba(0,0,0,0.25);
-      border-radius: 999px;
-      padding: 4px 10px;
-      font-size: 0.76rem;
-      letter-spacing: .04em;
-      text-transform: uppercase;
-      margin-bottom: 8px;
-      opacity: 0.9;
-    }
-
-    .hero-title {
-      font-size: 1.7rem;
-      margin: 0 0 4px;
-    }
-
-    .hero-sub {
-      font-size: 0.98rem;
-      margin: 0 0 10px;
-      opacity: 0.95;
-    }
-
-    .price {
-      font-size: 1.05rem;
-      font-weight: 700;
-      margin: 6px 0 8px;
-    }
-
-    .price span {
-      color: var(--orange);
-    }
-
-    .hero-mini {
-      font-size: 0.85rem;
-      opacity: 0.9;
-      margin-bottom: 10px;
-    }
-
-    .hero-buttons {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin-top: 4px;
-      margin-bottom: 14px;
-    }
-
-    .btn-main, .btn-ghost {
-      display: inline-block;
-      padding: 9px 14px;
-      border-radius: 999px;
-      font-size: 0.9rem;
-      font-weight: 700;
-      text-decoration: none;
-      white-space: nowrap;
-    }
-
-    .btn-main {
-      background: var(--orange);
-      color: #000;
-    }
-
-    .btn-ghost {
-      background: var(--orange);
-      color: #000;
-      border: none;
-    }
-
-    .hero-media {
-      border-radius: 14px;
-      overflow: hidden;
-      margin-top: 4px;
-      border: 1px solid rgba(255,255,255,0.1);
-    }
-
-    .section {
-      background: var(--green-soft);
-      border-radius: 14px;
-      padding: 16px 18px;
-      margin-bottom: 16px;
-    }
-
-    h2 { font-size: 1.25rem; margin: 0 0 8px; }
-
-    ul, ol {
-      margin: 6px 0 8px 18px;
-      font-size: 0.9rem;
-    }
-
-    .note { font-size: 0.85rem; opacity: 0.9; }
-
-    .mid-cta {
-      text-align: center;
-      margin: 10px 0 2px;
-    }
-
-    .mid-cta a {
-      display: inline-block;
-      padding: 9px 18px;
-      border-radius: 999px;
-      background: var(--orange);
-      color: #000;
-      font-weight: 700;
-      font-size: 0.9rem;
-      text-decoration: none;
-      margin-top: 4px;
-    }
-
-    /* Section Mama Asha */
-    .mama-section {
-      display: grid;
-      gap: 12px;
-      align-items: center;
-    }
-
-    @media (min-width: 720px) {
-      .mama-section {
-        grid-template-columns: 0.9fr 1.1fr;
-      }
-    }
-
-    .mama-photo-wrap {
-      display: flex;
-      justify-content: center;
-    }
-
-    .mama-photo {
-      width: 140px;
-      height: 140px;
-      border-radius: 50%;
-      overflow: hidden;
-      border: 3px solid rgba(255,255,255,0.85);
-      box-shadow: 0 8px 18px rgba(0,0,0,0.4);
-    }
-
-    .mama-photo img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-    .mama-text-main {
-      font-size: 0.95rem;
-      margin-bottom: 6px;
-    }
-
-    .mama-quote {
-      font-style: italic;
-      font-size: 0.9rem;
-      margin-bottom: 8px;
-      opacity: 0.95;
-    }
-
-    .mama-cta {
-      font-size: 0.87rem;
-      opacity: 0.9;
-    }
-
-    .mama-cta strong {
-      font-weight: 700;
-    }
-
-    footer {
-      position: fixed;
-      left: 0; right: 0; bottom: 0;
-      background: #05150f;
-      padding: 9px 14px 11px;
-      display: flex; justify-content: space-between; align-items: center;
-      font-size: 0.85rem;
-      border-top: 1px solid rgba(255,255,255,0.1);
-    }
-
-    .cta-wa {
-      display: inline-block;
-      padding: 9px 16px;
-      border-radius: 999px;
-      background: var(--orange);
-      color: #000;
-      font-weight: 800;
-      text-decoration: none;
-      font-size: 0.85rem;
-      animation: pulse 1.5s infinite;
-      white-space: nowrap;
-    }
-
-    @keyframes pulse {
-      0% { box-shadow: 0 0 0 0 rgba(255,159,28,0.5); }
-      70% { box-shadow: 0 0 0 12px rgba(255,159,28,0); }
-      100% { box-shadow: 0 0 0 0 rgba(255,159,28,0); }
-    }
-
     @media (min-width: 720px) {
       .nav-cta {
         display: inline-block;
@@ -306,104 +82,96 @@
         <span>Sekali Coba, Auto Ketagihan</span>
       </div>
     </div>
-    <a class="nav-cta" href="https://wa.me/6285932684440" target="_blank">YUK ORDER</a>
+    <a class="nav-cta" href="https://wa.me/6285932684440?text=Halo%20Mama%20Asha%2C%20saya%20mau%20order%20Nasi%20Bakar.%20Untuk%20area%20Taman%20Walet%20ya%20🍱✨" target="_blank">YUK ORDER</a>
   </div>
 </header>
 
 <div class="container">
-
   <!-- HERO -->
-  <section class="hero">
+  <section class="hero" style="background: radial-gradient(circle at top left, #207857 0, #123528 55%, #081710 100%); border-radius: 18px; padding: 18px; margin:16px 0 26px;">
     <div>
-      <div class="hero-tag">Best Seller · Taman Walet · Pasar Kemis</div>
-      <h1 class="hero-title">Sekali Coba,<br>Auto Ketagihan.</h1>
-      <p class="hero-sub">
-        Nasi putih pulen + ayam suwir pedas kemangi dengan aroma daun pisang yang menggoda!
-      </p>
-      <p class="price">Mulai <span>Rp 8.000 / porsi</span></p>
-      <p class="hero-mini">
-        Cocok bekal, meeting kecil & Jumat Berkah — Pre Order H-2 min. 10 porsi.
-      </p>
-      <div class="hero-buttons">
-        <a class="btn-main" href="https://wa.me/6285932684440" target="_blank">YUK ORDER via WhatsApp</a>
-        <a class="btn-ghost" href="#reseller">Program Reseller</a>
+      <div class="hero-tag" style="background: rgba(0,0,0,0.25); border-radius: 999px; padding: 4px 10px; font-size: .76rem; margin-bottom: 8px;">Best Seller · Taman Walet · Pasar Kemis</div>
+      <h1 class="hero-title" style="font-size: 1.7rem; margin:0 0 4px;">Sekali Coba,<br>Auto Ketagihan.</h1>
+      <p style="font-size:.98rem; opacity:.95;">Nasi putih pulen + ayam suwir pedas kemangi dengan aroma daun pisang yang menggoda!</p>
+      <p class="price" style="font-weight:700; margin:6px 0 8px;">Mulai <span style="color:#ff9f1c;">Rp 8.000 / porsi</span></p>
+      <p style="font-size:.85rem; opacity:.9;">Cocok bekal, meeting kecil & Jumat Berkah — Pre Order H-2 min. 10 porsi.</p>
+
+      <div class="hero-buttons" style="display:flex; gap:8px; flex-wrap:wrap;">
+        <a class="btn-main" style="background:#ff9f1c; color:#000; padding:9px 14px; border-radius:999px; font-weight:700; text-decoration:none;"
+           href="https://wa.me/6285932684440?text=Halo%20Mama%20Asha%2C%20saya%20mau%20order%20Nasi%20Bakar.%20Untuk%20area%20Taman%20Walet%20ya%20🍱✨"
+           target="_blank">YUK ORDER via WhatsApp</a>
+
+        <a class="btn-ghost" style="background:#ff9f1c; color:#000; padding:9px 14px; border-radius:999px; font-weight:700; text-decoration:none;"
+           href="#reseller">
+           Program Reseller
+        </a>
       </div>
     </div>
 
-    <div class="hero-media">
+    <div class="hero-media" style="border-radius:14px; overflow:hidden; margin-top:10px;">
       <img src="hero-nasi-bakar.jpg" alt="Nasi Bakar Mama Asha">
     </div>
   </section>
 
   <!-- TENTANG PRODUK -->
-  <section class="section">
+  <section class="section" style="background:#174d37; padding:16px; border-radius:14px; margin-bottom:16px;">
     <h2>Tentang Nasi Bakar Mama Asha</h2>
-    <ul>
+    <ul style="margin:6px 0 8px 18px;">
       <li>Nasi putih pulen & wangi daun pisang.</li>
       <li>Ayam suwir pedas kemangi — rasa rempah berani.</li>
       <li>100% homemade — tanpa pengawet.</li>
     </ul>
   </section>
 
-  <!-- KENALAN SAMA MAMA ASHA -->
-  <section class="section mama-section">
-    <div class="mama-photo-wrap">
-      <div class="mama-photo">
-        <!-- pastikan file ini ada di repo dengan nama persis: mama-asha.jpg -->
-        <img src="mama-asha.jpg" alt="Mama Asha">
-      </div>
+  <!-- KENALAN MAMA ASHA -->
+  <section class="section" style="background:#174d37; padding:16px; border-radius:14px; margin-bottom:16px;">
+    <div style="text-align:center; margin-bottom:10px;">
+      <img src="mama-asha.jpg" alt="Mama Asha" style="width:140px;height:140px;border-radius:50%;object-fit:cover;border:3px solid rgba(255,255,255,.8);">
     </div>
-    <div>
-      <h2>Kenalan Sama Mama Asha 😁🍃</h2>
-      <p class="mama-text-main">
-        Di balik setiap bungkus Nasi Bakar Mama Asha, ada doa & cinta dari dapur kecil di Taman Walet.
-      </p>
-      <p class="mama-quote">
-        “Nikmati sensasi gurihnya nasi bakar penuh cinta di setiap gigitan!”
-      </p>
-      <p class="mama-cta">
-        Kalau Besti lapar atau mau pesen buat acara, <br>
-        <strong>biar Mama yang masakin kamu ya 💚</strong><br>
-        Chat aja ke WhatsApp: <strong>0859-3268-4440</strong>
-      </p>
-    </div>
+    <h2>Kenalan Sama Mama Asha 😁🍃</h2>
+    <p>Di balik setiap bungkus Nasi Bakar Mama Asha, ada doa & cinta dari dapur kecil di Taman Walet.</p>
+    <p style="font-style:italic;">“Nikmati sensasi gurihnya nasi bakar penuh cinta di setiap gigitan!”</p>
+    <p>Kalau Besti lapar atau mau pesen buat acara,<br>
+       <strong>biar Mama yang masakin kamu ya 💚</strong><br>
+       Chat aja ke WhatsApp: <strong>0859-3268-4440</strong></p>
   </section>
 
   <!-- CARA ORDER -->
-  <section class="section">
+  <section class="section" style="background:#174d37; padding:16px; border-radius:14px; margin-bottom:16px;">
     <h2>Cara Order</h2>
-    <ul>
+    <ul style="margin:6px 0 8px 18px;">
       <li>Minimal 10 porsi.</li>
-      <li>Pre Order H-2 sebelum pukul 14.00 WIB.</li>
+      <li>Pre Order H-2 (maks 14:00 WIB)</li>
       <li>Free Delivery — Taman Walet & sekitar.</li>
     </ul>
-    <div class="mid-cta">
-      <div style="font-size:0.8rem;opacity:.9;">Siap bantu & fast response via WhatsApp</div>
-      <a href="https://wa.me/6285932684440" target="_blank">YUK ORDER SEKARANG</a>
+    <div style="text-align:center; margin-top:10px;">
+      <a style="display:inline-block; background:#ff9f1c; padding:9px 16px; border-radius:999px; color:#000; font-weight:700; text-decoration:none;"
+         href="https://wa.me/6285932684440?text=Halo%20Mama%20Asha%2C%20saya%20mau%20order%20Nasi%20Bakar.%20Untuk%20area%20Taman%20Walet%20ya%20🍱✨"
+         target="_blank">YUK ORDER SEKARANG</a>
     </div>
   </section>
 
   <!-- PROGRAM RESELLER -->
-  <section class="section" id="reseller">
-    <h2>Program Reseller Nasi Bakar Mama Asha</h2>
-    <p>Mau nambah penghasilan dari rumah dengan produk yang laris tiap hari?</p>
+  <section id="reseller" class="section" style="background:#174d37; padding:16px; border-radius:14px; margin-bottom:16px;">
+    <h2>Program Reseller</h2>
+    <p>Mau nambah penghasilan dari rumah? Yuk gabung reseller Nasi Bakar Mama Asha!</p>
     <ul>
       <li>Modal kecil, potensi cuan harian.</li>
-      <li>Produk mudah dijual di kantor, komplek, atau online.</li>
-      <li>Foto & teks promosi disediakan untuk status dan sosmed.</li>
-      <li>Rasa stabil & kualitas terjaga, repeat order tinggi.</li>
+      <li>Mudah dijual di komplek / kantor.</li>
+      <li>Materi promosi disediakan.</li>
+      <li>Repeat order tinggi!</li>
     </ul>
-    <p class="note">
-      Cara daftar: chat WhatsApp ke <strong>0859-3268-4440</strong>, ceritakan area & rencana jualan, lalu pilih paket yang cocok.
-    </p>
+    <p>Daftar sekarang via WhatsApp ya Besti 💚</p>
   </section>
+  </div> <!-- end .container -->
 
-</div>
-
-<footer>
+<footer style="position:fixed; left:0; right:0; bottom:0; background:#05150f; padding:9px 14px; display:flex; justify-content:space-between; align-items:center; border-top:1px solid rgba(255,255,255,0.1); font-size:.85rem;">
   <span>WA 0859-3268-4440</span>
-  <a class="cta-wa" href="https://wa.me/6285932684440" target="_blank">YUK ORDER</a>
+  <a style="background:#ff9f1c; color:#000; font-weight:800; text-decoration:none; padding:9px 16px; border-radius:999px;"
+     class="cta-wa"
+     href="https://wa.me/6285932684440?text=Halo%20Mama%20Asha%2C%20saya%20mau%20order%20Nasi%20Bakar.%20Untuk%20area%20Taman%20Walet%20ya%20🍱✨"
+     target="_blank">YUK ORDER</a>
 </footer>
 
 </body>
-  </html>
+</html>
