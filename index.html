@@ -27,7 +27,7 @@
 
     header {
       padding: 14px 16px;
-      background: linear-gradient(135deg, var(--green), #1c7a57);
+      background: linear-gradient(135deg, #0c402e, #145c42);
       border-bottom: 1px solid rgba(255,255,255,0.07);
     }
 
@@ -85,8 +85,6 @@
       border-radius: 18px;
       padding: 18px 18px 16px;
       margin: 16px 0 20px;
-      display: grid;
-      gap: 16px;
     }
 
     .hero-tag {
@@ -133,6 +131,7 @@
       flex-wrap: wrap;
       gap: 8px;
       margin-top: 4px;
+      margin-bottom: 14px;
     }
 
     .btn-main, .btn-ghost {
@@ -151,15 +150,15 @@
     }
 
     .btn-ghost {
-      border: 1px solid rgba(255,255,255,0.4);
-      color: #fff;
-      background: transparent;
+      border: 1px solid rgba(0,0,0,0.2);
+      color: #000;
+      background: #ffd27a;
     }
 
     .hero-media {
       border-radius: 14px;
       overflow: hidden;
-      background: #0f251a;
+      margin-top: 8px;
       border: 1px solid rgba(255,255,255,0.1);
     }
 
@@ -171,8 +170,30 @@
     }
 
     h2 { font-size: 1.25rem; margin: 0 0 8px; }
-    ul, ol { margin: 6px 0 8px 18px; font-size: 0.9rem; }
+
+    ul, ol {
+      margin: 6px 0 8px 18px;
+      font-size: 0.9rem;
+    }
+
     .note { font-size: 0.85rem; opacity: 0.9; }
+
+    .mid-cta {
+      text-align: center;
+      margin: 10px 0 2px;
+    }
+
+    .mid-cta a {
+      display: inline-block;
+      padding: 9px 18px;
+      border-radius: 999px;
+      background: var(--orange);
+      color: #000;
+      font-weight: 700;
+      font-size: 0.9rem;
+      text-decoration: none;
+      margin-top: 4px;
+    }
 
     footer {
       position: fixed;
@@ -194,12 +215,26 @@
       text-decoration: none;
       font-size: 0.85rem;
       animation: pulse 1.5s infinite;
+      white-space: nowrap;
     }
 
     @keyframes pulse {
       0% { box-shadow: 0 0 0 0 rgba(255,159,28,0.5); }
       70% { box-shadow: 0 0 0 12px rgba(255,159,28,0); }
       100% { box-shadow: 0 0 0 0 rgba(255,159,28,0); }
+    }
+
+    @media (min-width: 720px) {
+      .nav-cta {
+        display: inline-block;
+        padding: 7px 13px;
+        border-radius: 999px;
+        background: var(--orange);
+        color: #000;
+        font-size: 0.8rem;
+        font-weight: 700;
+        text-decoration: none;
+      }
     }
   </style>
 </head>
@@ -223,6 +258,7 @@
 
 <div class="container">
 
+  <!-- HERO -->
   <section class="hero">
     <div>
       <div class="hero-tag">Best Seller · Taman Walet · Pasar Kemis</div>
@@ -245,32 +281,43 @@
     </div>
   </section>
 
+  <!-- TENTANG PRODUK -->
   <section class="section">
     <h2>Tentang Nasi Bakar Mama Asha</h2>
     <ul>
-      <li>Nasi putih pulen & wangi daun pisang</li>
-      <li>Ayam suwir pedas kemangi — rasa rempah berani</li>
-      <li>100% homemade — tanpa pengawet</li>
+      <li>Nasi putih pulen & wangi daun pisang.</li>
+      <li>Ayam suwir pedas kemangi — rasa rempah berani.</li>
+      <li>100% homemade — tanpa pengawet.</li>
     </ul>
   </section>
 
+  <!-- CARA ORDER -->
   <section class="section">
     <h2>Cara Order</h2>
     <ul>
-      <li>Minimal 10 porsi</li>
-      <li>Pre Order H-2 sebelum 14.00</li>
-      <li>Free Delivery — Taman Walet & sekitar</li>
+      <li>Minimal 10 porsi.</li>
+      <li>Pre Order H-2 sebelum pukul 14.00 WIB.</li>
+      <li>Free Delivery — Taman Walet & sekitar.</li>
     </ul>
+    <div class="mid-cta">
+      <div style="font-size:0.8rem;opacity:.9;">Siap bantu & fast response via WhatsApp</div>
+      <a href="https://wa.me/6285932684440" target="_blank">YUK ORDER SEKARANG</a>
+    </div>
   </section>
 
+  <!-- PROGRAM RESELLER -->
   <section class="section" id="reseller">
-    <h2>Program Reseller</h2>
+    <h2>Program Reseller Nasi Bakar Mama Asha</h2>
+    <p>Mau nambah penghasilan dari rumah dengan produk yang laris tiap hari?</p>
     <ul>
-      <li>Modal kecil — cepat balik</li>
-      <li>Foto & caption promosi disediakan</li>
-      <li>Cuan harian — repeat order tinggi</li>
+      <li>Modal kecil, potensi cuan harian.</li>
+      <li>Produk mudah dijual di kantor, komplek, atau online.</li>
+      <li>Foto & teks promosi disediakan untuk status dan sosmed.</li>
+      <li>Rasa stabil & kualitas terjaga, repeat order tinggi.</li>
     </ul>
-    <p class="note">Daftar via WhatsApp: 0859-3268-4440</p>
+    <p class="note">
+      Cara daftar: chat WhatsApp ke <strong>0859-3268-4440</strong>, ceritakan area & rencana jualan, lalu pilih paket yang cocok.
+    </p>
   </section>
 
 </div>
