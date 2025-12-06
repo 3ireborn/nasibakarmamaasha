@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Program Reseller Nasi Bakar Mama Asha</title>
+  <style>
+    :root {
+      --green: #145c42;
+      --green-soft: #174d37;
+      --orange: #ff9f1c;
+      --bg: #0b2218;
+      --text: #ffffff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+    }
+    img { max-width: 100%; display: block; }
+    header {
+      padding: 14px 16px;
+      background: linear-gradient(135deg, #0c402e, #145c42);
+      border-bottom: 1px solid rgba(255,255,255,0.07);
+    }
+    .nav {
+      max-width: 960px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+    }
+    .logo-wrap {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .logo img {
+      width: 38px;
+      height: 38px;
+      border-radius: 999px;
+      object-fit: cover;
+    }
+    .brand-text span:first-child {
+      font-weight: 700;
+      font-size: 0.95rem;
+      letter-spacing: 0.04em;
+    }
+    .brand-text span:last-child {
+      font-size: 0.75rem;
+      opacity: 0.9;
+    }
+    .nav-cta {
+      display: none;
+    }
+    @media (min-width: 720px) {
+      .nav-cta {
+        display: inline-block;
+        padding: 7px 13px;
+        border-radius: 999px;
+        background: var(--orange);
+        color: #000;
+        font-size: 0.8rem;
+        font-weight: 700;
+        text-decoration: none;
+      }
+    }
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 20px 16px 90px;
+    }
+    .hero {
+      background: radial-gradient(circle at top left, #207857 0, #123528 55%, #081710 100%);
+      border-radius: 18px;
+      padding: 18px;
+      margin: 16px 0 20px;
+    }
+    .badge {
+      display:inline-block;
+      padding:4px 10px;
+      border-radius:999px;
+      background:rgba(0,0,0,0.25);
+      font-size:.76rem;
+      letter-spacing:.06em;
+    }
+    h1 {
+      margin:8px 0 4px;
+      font-size:1.6rem;
+    }
+    h2 { font-size:1.2rem; margin:0 0 8px; }
+    .section {
+      background: var(--green-soft);
+      border-radius:14px;
+      padding:16px 18px;
+      margin-bottom:16px;
+    }
+    ul, ol {
+      margin:6px 0 8px 18px;
+      font-size:0.9rem;
+    }
+    .pill {
+      display:inline-block;
+      padding:3px 9px;
+      border-radius:999px;
+      border:1px solid rgba(255,255,255,0.28);
+      font-size:0.8rem;
+      margin:2px 4px 4px 0;
+    }
+    .cta-main {
+      display:inline-block;
+      padding:9px 16px;
+      border-radius:999px;
+      background:var(--orange);
+      color:#000;
+      font-weight:700;
+      text-decoration:none;
+      font-size:0.9rem;
+    }
+    footer {
+      position:fixed;
+      left:0; right:0; bottom:0;
+      background:#05150f;
+      padding:9px 14px 11px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      font-size:0.85rem;
+      border-top:1px solid rgba(255,255,255,0.1);
+    }
+    .cta-wa {
+      display:inline-block;
+      padding:9px 16px;
+      border-radius:999px;
+      background:var(--orange);
+      color:#000;
+      font-weight:800;
+      text-decoration:none;
+      font-size:0.85rem;
+    }
+    a { color:#ffcf6c; }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <div class="logo-wrap">
+      <div class="logo">
+        <img src="logo-mama-asha.png" alt="Logo Nasi Bakar Mama Asha">
+      </div>
+      <div class="brand-text">
+        <span>Nasi Bakar Mama Asha</span>
+        <span>Program Reseller · Taman Walet</span>
+      </div>
+    </div>
+    <a class="nav-cta" href="index.html">KEMBALI KE BERANDA</a>
+  </div>
+</header>
+
+<div class="container">
+
+  <!-- HERO -->
+  <section class="hero">
+    <span class="badge">Khusus Area Taman Walet</span>
+    <h1>Program Reseller Nasi Bakar Mama Asha</h1>
+    <p style="margin:4px 0 10px;">
+      Mau nambah penghasilan dari rumah tanpa ribet masak?  
+      Yuk jualan Nasi Bakar Mama Asha bareng Mama 💚
+    </p>
+    <p style="font-size:0.9rem; opacity:.95;">
+      Sistem gampang · Modal ringan · Produk sudah laku di offline.
+    </p>
+    <a class="cta-main"
+       href="https://wa.me/6285932684440?text=Halo%20Mama%20Asha%2C%20saya%20minat%20jadi%20reseller%20Nasi%20Bakar.%20Boleh%20info%20syarat%20dan%20skema%20keuntungannya%20ya%20🍱✨"
+       target="_blank">Chat Mama Asha Untuk Daftar</a>
+  </section>
+
+  <!-- RINGKASAN PROGRAM -->
+  <section class="section">
+    <h2>Ringkasan Program</h2>
+    <p>Program ini cocok untuk warga Taman Walet yang ingin nambah penghasilan dengan jualan makanan yang sudah punya pelanggan.</p>
+    <div>
+      <span class="pill">Produk laris offline</span>
+      <span class="pill">Tanpa repot masak</span>
+      <span class="pill">Bisa titip di warung</span>
+      <span class="pill">Cocok untuk ibu rumah tangga</span>
+    </div>
+  </section>
+
+  <!-- SKEMA HARGA -->
+  <section class="section">
+    <h2>Skema Harga Reseller</h2>
+    <ul>
+      <li>Harga ke reseller (HPP): <strong>Rp 7.000 / porsi</strong>.</li>
+      <li>Harga jual rekomendasi: <strong>Rp 8.000 / porsi</strong>.</li>
+      <li>Keuntungan minimal: <strong>Rp 1.000 / porsi</strong>.</li>
+      <li>Reseller boleh jual lebih tinggi (misal 9.000) sesuai lingkungan, yang penting laku.</li>
+    </ul>
+    <p style="font-size:0.9rem;">
+      Contoh: jual 20 porsi per hari → untung minimal 20.000.  
+      Kalau 5 hari jualan dalam seminggu → sekitar <strong>Rp 100.000 / minggu</strong>.
+    </p>
+  </section>
+
+  <!-- SISTEM PRE ORDER -->
+  <section class="section">
+    <h2>Sistem Pre-Order & Pengantaran</h2>
+    <p>Nasi Bakar Mama Asha <strong>tidak stok siang/malam</strong>. Semua pesanan dibuat fresh untuk besok pagi.</p>
+    <ul>
+      <li><strong>Pemesanan harian:</strong>  
+        Reseller kumpulkan order hari ini, kirim ke Mama Asha <strong>maksimal jam 14.00 WIB</strong>  
+        untuk pengantaran <strong>besok pagi</strong>.
+      </li>
+      <li><strong>Pemesanan jumlah banyak (acara, kantor, arisan):</strong>  
+        Minimal <strong>10 porsi</strong>, order <strong>H-2</strong> sebelum hari H dan DP <strong>50%</strong>.
+      </li>
+      <li>Area pengantaran utama: <strong>Taman Walet & sekitar</strong>.</li>
+    </ul>
+  </section>
+
+  <!-- ALUR KERJA RESELLER -->
+  <section class="section">
+    <h2>Alur Kerja Reseller</h2>
+    <ol>
+      <li>Cari pelanggan di sekitar rumah, kantor, atau titip di warung.</li>
+      <li>Kumpulkan pesanan & catat jumlah porsi yang mau dibeli.</li>
+      <li>Sebelum jam 14.00, kirim total pesanan ke WhatsApp Mama Asha.</li>
+      <li>Besok pagi, Nasi Bakar dikirim ke alamat reseller.</li>
+      <li>Reseller jual ke pelanggan dengan harga yang disepakati.</li>
+      <li>Setelah selesai jualan, reseller setor pembayaran ke Mama Asha sesuai jumlah porsi yang diambil.</li>
+    </ol>
+  </section>
+
+  <!-- CONTOH CUAN -->
+  <section class="section">
+    <h2>Contoh Simulasi Keuntungan</h2>
+    <p><strong>Contoh 1:</strong></p>
+    <ul>
+      <li>Order: 15 porsi.</li>
+      <li>Harga ke reseller: 7.000 → bayar ke Mama Asha: 105.000.</li>
+      <li>Harga jual: 8.000 → penerimaan reseller: 120.000.</li>
+      <li><strong>Keuntungan:</strong> 15.000 per hari.</li>
+    </ul>
+
+    <p><strong>Contoh 2 (lebih semangat):</strong></p>
+    <ul>
+      <li>Order: 30 porsi.</li>
+      <li>Keuntungan minimal: 30 x 1.000 = <strong>Rp 30.000 / hari</strong>.</li>
+      <li>Kalau sebulan aktif 20 hari → sekitar <strong>Rp 600.000</strong>.</li>
+    </ul>
+  </section>
+
+  <!-- SYARAT & CARA DAFTAR -->
+  <section class="section">
+    <h2>Syarat & Cara Daftar</h2>
+    <ul>
+      <li>Domisili di <strong>area Taman Walet & sekitar</strong>.</li>
+      <li>Serius mau jualan & bisa jaga kualitas nama baik produk.</li>
+      <li>Punya WhatsApp aktif.</li>
+    </ul>
+    <p><strong>Cara daftar:</strong></p>
+    <ol>
+      <li>Chat WhatsApp ke nomor <strong>0859-3268-4440</strong>.</li>
+      <li>Sampaikan: nama, alamat, dan rencana jualan (warung / door to door / online).</li>
+      <li>Diskusi paket pertama & jadwal pengantaran.</li>
+    </ol>
+    <p style="font-size:0.9rem;">
+      Tekan tombol di bawah untuk langsung chat:
+    </p>
+    <a class="cta-main"
+       href="https://wa.me/6285932684440?text=Halo%20Mama%20Asha%2C%20saya%20minat%20jadi%20reseller%20Nasi%20Bakar.%20Mohon%20info%20syarat%20dan%20paket%20pertamanya%20ya%20🍱✨"
+       target="_blank">Saya Mau Jadi Reseller</a>
+  </section>
+
+</div>
+
+<footer>
+  <span>Info reseller: WA 0859-3268-4440</span>
+  <a class="cta-wa"
+     href="https://wa.me/6285932684440?text=Halo%20Mama%20Asha%2C%20saya%20minat%20jadi%20reseller%20Nasi%20Bakar.%20Mohon%20info%20lengkapnya%20ya%20🍱✨"
+     target="_blank">CHAT MAMA ASHA</a>
+</footer>
+
+</body>
+</html>
